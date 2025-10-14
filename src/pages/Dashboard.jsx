@@ -14,12 +14,11 @@ function Dashboard() {
     <div>
        <Header />
       <section id="about" className="mb-5"><About /></section>
+       <section id="skills" className="mb-5"><Skills /></section>
+        <section id="experience" className="mb-5"><Experience /></section>
       <section id="projects" className="mb-5"><Projects /></section>
-      <section id="skills" className="mb-5"><Skills /></section>
-      <section id="resume" className="mb-5"><Resume /></section>
-      <section id="experience" className="mb-5"><Experience /></section>
-      <section id="testimonials" className="mb-5"><Testimonials /></section>
-        <section id="education" className="mb-5"><Education /></section>
+       <section id="education" className="mb-5"><Education /></section>
+      {/* <section id="resume" className="mb-5"><Resume /></section> */}
       <section id="contact" className="mb-5"><Contact /></section>
     </div>
   );

@@ -2,17 +2,17 @@ import React from "react";
 
 function Header() {
   return (
-    <div className="card shadow-sm p-4 text-center mb-5">
+    <div className="card my-box my-border p-4 text-center mb-5">
       <img 
-        src="https://via.placeholder.com/120" 
+        src="/images/bharath.svg" 
         alt="Profile" 
-        className="rounded-circle mb-3"
+        className="My-profile rounded-circle mb-3 img-fluid"
       />
-      <h2>Bharath Chandra</h2>
-      <h5 className="text-muted">UI Developer | React & WordPress Specialist</h5>
+      <h1 className="heading-1">Bharath Chandra</h1>
+      <h3 className="text-muted heading-3 fw-500">UI Developer | React & WordPress Specialist</h3>
       <a 
         href="/resume.pdf" 
-        className="btn btn-primary mt-3" 
+        className="btn my-btn btn-orange-bg mx-auto mt-3 btn-w-300" 
         download
       >
         Download Resume

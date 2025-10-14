@@ -17,7 +17,7 @@ function Sidebar() {
     <>
       {/* Mobile Top Navbar */}
       <div className="d-md-none bg-dark text-white p-2 d-flex justify-content-between align-items-center">
-        <h4 className="m-0">My Portfolio</h4>
+        <h4 className="m-0"><img className="Logo img-fluid" src="/images/My-logo-white.png" /></h4>
         <button className="btn btn-outline-light" onClick={toggleSidebar}>
           ☰
         </button>
@@ -25,7 +25,7 @@ function Sidebar() {
 
       {/* Sidebar for Desktop / Drawer for Mobile */}
       <div
-        className={`bg-dark text-white p-3 sidebar 
+        className={`text-white p-3 sidebar 
           ${isOpen ? "d-block" : "d-none"} d-md-flex flex-md-column`}
         style={{
           minHeight: "100vh",
@@ -36,16 +36,32 @@ function Sidebar() {
           zIndex: 1000,
         }}
       >
-        <h2 className="mb-4 d-none d-md-block">My Portfolio</h2>
-        <nav className="nav flex-column">
-          <a href="#about" className="nav-link text-white" onClick={(e) => handleScroll(e, "about")}>About</a>
-          <a href="#projects" className="nav-link text-white" onClick={(e) => handleScroll(e, "projects")}>Projects</a>
-          <a href="#skills" className="nav-link text-white" onClick={(e) => handleScroll(e, "skills")}>Skills</a>
-          <a href="#experience" className="nav-link text-white" onClick={(e) => handleScroll(e, "experience")}>Experience</a>
-          <a href="#education" className="nav-link text-white" onClick={(e) => handleScroll(e, "education")}>Education</a>
-          <a href="#testimonials" className="nav-link text-white" onClick={(e) => handleScroll(e, "testimonials")}>Testimonials</a>
-          <a href="#resume" className="nav-link text-white" onClick={(e) => handleScroll(e, "resume")}>Resume</a>
-          <a href="#contact" className="nav-link text-white" onClick={(e) => handleScroll(e, "contact")}>Contact</a>
+        <h2 className="mb-4 d-none d-md-block">
+          <img className="Logo img-fluid" src="/images/My-logo-white.png" />
+          </h2>
+        <nav className="nav flex-column BC-nav">
+          <a href="#about" className="nav-link text-white" onClick={(e) => handleScroll(e, "about")}>
+            <img src="/images/about-icon.svg" /> 
+            About
+            </a>
+             <a href="#skills" className="nav-link text-white" onClick={(e) => handleScroll(e, "skills")}>
+            <img src="/images/skills-icon.svg" />
+            Skills
+            </a>
+             <a href="#experience" className="nav-link text-white" onClick={(e) => handleScroll(e, "experience")}>
+            <img src="/images/exp-icon.svg" /> Experience
+            </a>
+          <a href="#projects" className="nav-link text-white" onClick={(e) => handleScroll(e, "projects")}>
+            <img src="/images/projects-icon.svg" />
+            Projects</a>
+          <a href="#education" className="nav-link text-white" onClick={(e) => handleScroll(e, "education")}>
+            <img src="/images/education-icon.svg" />
+            Education
+            </a>
+          <a href="#resume" className="nav-link text-white d-none" onClick={(e) => handleScroll(e, "resume")}>Resume</a>
+          <a href="#contact" className="nav-link text-white" onClick={(e) => handleScroll(e, "contact")}>
+            <img src="/images/contact-icon.svg" />
+            Contact</a>
         </nav>
       </div>
     </>
