@@ -2,13 +2,13 @@ import React, { useState,useEffect } from "react";
 
 function Sidebar() {
   const [isOpen, setIsOpen] = useState(false);
-  useEffect(() => {
-  if (isOpen) {
-    document.body.style.overflow = "hidden";
-  } else {
-    document.body.style.overflow = "auto";
-  }
-}, [isOpen]); // runs whenever isOpen changes
+//   useEffect(() => {
+//   if (isOpen) {
+//     document.body.style.overflow = "hidden";
+//   } else {
+//     document.body.style.overflow = "auto";
+//   }
+// }, [isOpen]); // runs whenever isOpen changes
 
 const toggleSidebar = () => {
   setIsOpen(!isOpen);
@@ -28,9 +28,17 @@ const toggleSidebar = () => {
       {/* Mobile Top Navbar */}
       <div className="My-header d-lg-none bg-dark text-white py-2 px-3 d-flex justify-content-between align-items-center">
         <h4 className="m-0"><img className="Logo img-fluid" src="/images/My-logo-white.png" /></h4>
-        <button className="btn btn-outline-light" onClick={toggleSidebar}>
-          ☰
-        </button>
+       {isOpen ? (
+    // Show Close button when sidebar is open
+    <button className="Close btn p-0 m-0" onClick={toggleSidebar}>
+      <img src="/images/close.svg" alt="close" />
+    </button>
+  ) : (
+    // Show Hamburger when sidebar is closed
+    <button className="btn btn-outline-light" onClick={toggleSidebar}>
+      ☰
+    </button>
+  )}
       </div>
 
       {/* Sidebar for Desktop / Drawer for Mobile */}
@@ -38,7 +46,7 @@ const toggleSidebar = () => {
         className={`text-white p-3 sidebar 
           ${isOpen ? "d-flex align-items-start justify-content-between" : "d-none"} d-lg-flex flex-lg-column`}
         style={{
-          position: isOpen ? "absolute" : "static",
+          position: isOpen ? "fixed" : "static",
         }}
       >
         <h2 className="mb-4 d-none d-lg-block">
@@ -68,7 +76,7 @@ const toggleSidebar = () => {
             <img src="/images/contact-icon.svg" />
             Contact</a>
         </nav>
-        <button className="Close btn p-0 m-0 d-md-none" onClick={toggleSidebar}><img src="/images/close.svg" alt="close" /></button>
+        {/* <button className="Close btn p-0 m-0 d-md-none" onClick={toggleSidebar}><img src="/images/close.svg" alt="close" /></button> */}
       </div>
     </>
   );
