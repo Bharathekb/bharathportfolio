@@ -2,7 +2,7 @@ import React from "react";
 
 function Contact() {
   return (
-    <section id="contact" className="mb-5">
+    <section id="contact" className="">
       <h2>Contact</h2>
       <p>Email: bharath@example.com</p>
       <p>LinkedIn: <a href="https://linkedin.com/in/yourprofile">linkedin.com/in/yourprofile</a></p>

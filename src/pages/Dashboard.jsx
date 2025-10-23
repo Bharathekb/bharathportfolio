@@ -11,15 +11,15 @@ import Education from "../components/Education";
 
 function Dashboard() {
   return (
-    <div>
+    <div className="Right-container d-flex flex-column">
        <Header />
-      <section id="about" className="mb-5"><About /></section>
-       <section id="skills" className="mb-5"><Skills /></section>
-        <section id="experience" className="mb-5"><Experience /></section>
-      <section id="projects" className="mb-5"><Projects /></section>
-       <section id="education" className="mb-5"><Education /></section>
-      {/* <section id="resume" className="mb-5"><Resume /></section> */}
-      <section id="contact" className="mb-5"><Contact /></section>
+      <section id="about" className="my-section"><About /></section>
+       <section id="skills" className="my-section"><Skills /></section>
+        <section id="experience" className="my-section"><Experience /></section>
+      <section id="projects" className="my-section"><Projects /></section>
+       <section id="education" className="my-section"><Education /></section>
+      {/* <section id="resume" className=""><Resume /></section> */}
+      <section id="contact" className="my-section"><Contact /></section>
     </div>
   );
 }

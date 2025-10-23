@@ -2,7 +2,7 @@ import React from "react";
 
 function Header() {
   return (
-    <div className="card my-box my-border p-4 text-center mb-5">
+    <div className="card my-box my-border p-4 text-center">
       <img 
         src="/images/bharath.svg" 
         alt="Profile" 
@@ -12,10 +12,10 @@ function Header() {
       <h3 className="text-muted heading-3 fw-500">UI Developer | React & WordPress Specialist</h3>
       <a 
         href="/resume.pdf" 
-        className="btn my-btn btn-orange-bg mx-auto mt-3 btn-w-300" 
+        className="btn my-btn btn-orange-bg mx-auto py-2 mt-3 btn-w-300" 
         download
       >
-        Download Resume
+        Download resume
       </a>
     </div>
   );
