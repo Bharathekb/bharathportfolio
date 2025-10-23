@@ -4,6 +4,14 @@ function Sidebar() {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleSidebar = () => setIsOpen(!isOpen);
+//  const handleScroll = (e, id) => {
+//     e.preventDefault();
+//     const section = document.getElementById(id);
+//     if (section) {
+//       section.scrollIntoView({ behavior: "smooth", block: "start" });
+//       setIsOpen(false); // auto-close sidebar on mobile after click
+//     }
+//   };
  const handleScroll = (e, id) => {
     e.preventDefault();
     const section = document.getElementById(id);
@@ -16,7 +24,7 @@ function Sidebar() {
   return (
     <>
       {/* Mobile Top Navbar */}
-      <div className="d-lg-none bg-dark text-white py-2 px-3 d-flex justify-content-between align-items-center">
+      <div className="My-header d-lg-none bg-dark text-white py-2 px-3 d-flex justify-content-between align-items-center">
         <h4 className="m-0"><img className="Logo img-fluid" src="/images/My-logo-white.png" /></h4>
         <button className="btn btn-outline-light" onClick={toggleSidebar}>
           ☰
