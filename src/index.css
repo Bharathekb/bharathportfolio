@@ -109,6 +109,9 @@ width: var(--btn-w-300);
 .Right-main{
   background-color: var(--white-400);
 }
+.Right-container{
+  gap: 48px;
+}
 .BC-nav{
   gap: 8px;
 }
