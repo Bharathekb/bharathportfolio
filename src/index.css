@@ -81,9 +81,11 @@ font-weight: var(--fw-800) !important;
   color: var(--semi-black-600);
   font-size: var(--font-16);
   font-weight: var(--fw-400);
+  line-height: 24px;
 }
 .my-btn{
   color: var(--white);
+  font-weight: var(--fw-600);
   border-radius: 8px;
   -webkit-border-radius: 8px;
   -moz-border-radius: 8px;
@@ -103,11 +105,16 @@ width: var(--btn-w-300);
 }
 .sidebar{
    width: 250px;
+  min-height: 100vh;
    height: 100vh;
+    top: 0;
+    left:0;
+    z-index: 1000;
    background-color: var(--semi-black-600);
 }
 .Right-main{
   background-color: var(--white-400);
+  height: 100vh;
 }
 .Right-container{
   gap: 48px;
@@ -128,13 +135,33 @@ width: var(--btn-w-300);
 .BC-nav a:hover{
 background-color: var(--semi-black-400);
 }
+.Close img{
+  width: 32px;
+  opacity: 0.8;
+}
+.Close:hover img{
+  width: 32px;
+  opacity: 1;
+}
 .My-profile{
   width: 70px;
   margin: auto;
 }
 .my-ul li{
   color: var(--semi-black-600);
+  font-size: var(--font-16);
+  font-weight: var(--fw-400);
+  line-height: 24px;
 }
 .my-border{
   border: var(--border);
+}
+.my-list li .para{
+  margin-bottom:12px;
+}
+.para-box .para{
+  margin-bottom: 8px;
+}
+.para-box .para:last-child{
+  margin-bottom: 0;
 }

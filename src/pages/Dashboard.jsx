@@ -4,10 +4,11 @@ import About from "../components/About";
 import Projects from "../components/Projects";
 import Skills from "../components/Skills";
 import Resume from "../components/Resume";
-import Testimonials from "../components/Testimonials";
+import AdditonalInformation from "../components/AdditonalInformation";
 import Contact from "../components/Contact";
 import Experience from "../components/Experience";
 import Education from "../components/Education";
+import Languages from "../components/Languages";
 
 function Dashboard() {
   return (
@@ -18,8 +19,10 @@ function Dashboard() {
         <section id="experience" className="my-section"><Experience /></section>
       <section id="projects" className="my-section"><Projects /></section>
        <section id="education" className="my-section"><Education /></section>
+        <section id="education" className="my-section"><Languages /></section>
       {/* <section id="resume" className=""><Resume /></section> */}
       <section id="contact" className="my-section"><Contact /></section>
+       <section id="contact" className="my-section"><AdditonalInformation /></section>
     </div>
   );
 }

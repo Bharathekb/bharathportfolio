@@ -16,7 +16,7 @@ function Sidebar() {
   return (
     <>
       {/* Mobile Top Navbar */}
-      <div className="d-md-none bg-dark text-white p-2 d-flex justify-content-between align-items-center">
+      <div className="d-lg-none bg-dark text-white py-2 px-3 d-flex justify-content-between align-items-center">
         <h4 className="m-0"><img className="Logo img-fluid" src="/images/My-logo-white.png" /></h4>
         <button className="btn btn-outline-light" onClick={toggleSidebar}>
           ☰
@@ -26,17 +26,12 @@ function Sidebar() {
       {/* Sidebar for Desktop / Drawer for Mobile */}
       <div
         className={`text-white p-3 sidebar 
-          ${isOpen ? "d-block" : "d-none"} d-md-flex flex-md-column`}
+          ${isOpen ? "d-flex align-items-start justify-content-between" : "d-none"} d-lg-flex flex-lg-column`}
         style={{
-          minHeight: "100vh",
-          width: "250px",
           position: isOpen ? "absolute" : "static",
-          top: 0,
-          left: 0,
-          zIndex: 1000,
         }}
       >
-        <h2 className="mb-4 d-none d-md-block">
+        <h2 className="mb-4 d-none d-lg-block">
           <img className="Logo img-fluid" src="/images/My-logo-white.png" />
           </h2>
         <nav className="nav flex-column BC-nav">
@@ -63,6 +58,7 @@ function Sidebar() {
             <img src="/images/contact-icon.svg" />
             Contact</a>
         </nav>
+        <button className="Close btn p-0 m-0 d-md-none" onClick={toggleSidebar}><img src="/images/close.svg" alt="close" /></button>
       </div>
     </>
   );
