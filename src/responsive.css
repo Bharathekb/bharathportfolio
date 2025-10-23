@@ -1,7 +1,7 @@
 @media (max-width:992px) {
-  body {
+  /* body {
     overflow: hidden;
-  }
+  } */
 
   .Main-container {
     flex-direction: column;
@@ -13,7 +13,7 @@
 
   .sidebar {
     width: 100%;
-    margin-top: 70px;
+margin-top: 70px;
   }
 .BC-nav {
     width: 89%;

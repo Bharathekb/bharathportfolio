@@ -1,17 +1,19 @@
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 
 function Sidebar() {
   const [isOpen, setIsOpen] = useState(false);
+  useEffect(() => {
+  if (isOpen) {
+    document.body.style.overflow = "hidden";
+  } else {
+    document.body.style.overflow = "auto";
+  }
+}, [isOpen]); // runs whenever isOpen changes
 
-  const toggleSidebar = () => setIsOpen(!isOpen);
-//  const handleScroll = (e, id) => {
-//     e.preventDefault();
-//     const section = document.getElementById(id);
-//     if (section) {
-//       section.scrollIntoView({ behavior: "smooth", block: "start" });
-//       setIsOpen(false); // auto-close sidebar on mobile after click
-//     }
-//   };
+const toggleSidebar = () => {
+  setIsOpen(!isOpen);
+};
+
  const handleScroll = (e, id) => {
     e.preventDefault();
     const section = document.getElementById(id);
