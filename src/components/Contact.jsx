@@ -59,7 +59,7 @@ function Contact() {
             required
           ></textarea>
         </div>
-        <button type="submit" className="btn btn-primary">
+        <button type="submit" className="btn my-btn btn-orange-bg mx-auto py-2 mt-3 btn-w-300">
           {status}
         </button>
       </form>

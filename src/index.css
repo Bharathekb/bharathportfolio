@@ -166,6 +166,6 @@ background-color: var(--semi-black-400);
 .para-box .para{
   margin-bottom: 8px;
 }
-.para-box .para:last-child{
+.para-box .para:last-child,.my-list li .para:last-child{
   margin-bottom: 0;
 }

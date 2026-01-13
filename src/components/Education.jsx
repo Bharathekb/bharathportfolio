@@ -17,7 +17,7 @@ function Education() {
         <li className="mb-4">
           <div className="d-flex justify-content-between mb-2">
             <h4 className="heading-4 fw-500">Intermediate (MPC)</h4>
-            <small className="para text-muted">July 2015 – Oct 2019 </small>
+            <small className="para text-muted">July 2013 – march 2015 </small>
           </div>
            <p className="para">
           TG Modal Govt School, Dharmapuri
